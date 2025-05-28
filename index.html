@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamer's Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --main-bg-color: #1a472a;
+            --hover-color: #0077ff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--main-bg-color);
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            margin-top: auto;
+            padding: 2rem;
+        }
+
+        .social-icon {
+            font-size: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .fa-instagram {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fa-facebook {
+            color: #1877f2;
+        }
+
+        .fa-tiktok {
+            color: #000000;
+        }
+
+        .fa-whatsapp {
+            color: #ffffff;
+        }
+
+        .fa-youtube {
+            color: #FF0000;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 10px var(--hover-color));
+        }
+
+        .fa-whatsapp:hover {
+            color: #25D366;
+        }
+
+        .bio-section {
+            max-width: 800px;
+            text-align: center;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+        }
+
+        .bio-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 1rem;
+            object-fit: cover;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .game-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .game-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .donate-button {
+            background: #ff6b6b;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 2rem 0;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .donate-button:hover {
+            background: #ff5252;
+            transform: scale(1.05);
+        }
+
+        .payment-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .payment-details {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .donate-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Regan SelloLord's Stream</h1>
+            <p>Connect with me on social media!</p>
+        </div>
+
+        <div class="bio-section">
+            <img src="[Insert Regan's image URL]" alt="Regan SelloLord" class="bio-image">
+            <h2>About Regan SelloLord</h2>
+            <p>Meet Regan SelloLord, a rising star in the South African gaming community who's taking the streaming world by storm. With his exceptional gaming skills and engaging personality, Regan has built a reputation for delivering intense gameplay moments while maintaining an entertaining connection with his audience. Whether he's securing victories in Warzone, dominating the octagon in UFC 5, or showcasing his tactical prowess in Apex Legends, Regan brings his unique style and commentary to every stream.</p>
+            <p>Join our growing community of gaming enthusiasts and experience the thrill of watching one of South Africa's most promising streamers as he continues to push the boundaries of competitive gaming while creating an inclusive and exciting environment for all viewers.</p>
+        </div>
+
+        <h2>Featured Games</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <h3>Warzone</h3>
+                <img src="[Insert Warzone image URL]" alt="Warzone" class="game-image">
+                <p>Experience intense battle royale action with strategic gameplay and precise gunfights.</p>
+            </div>
+            <div class="game-card">
+                <h3>Apex Legends</h3>
+                <img src="[Insert Apex Legends image URL]" alt="Apex Legends" class="game-image">
+                <p>Watch high-octane battles featuring unique legends and team-based tactical gameplay.</p>
+            </div>
+            <div class="game-card">
+                <h3>UFC 5</h3>
+                <img src="[Insert UFC 5 image URL]" alt="UFC 5" class="game-image">
+                <p>Witness spectacular knockouts and strategic combat in the ultimate fighting championship.</p>
+            </div>
+            <div class="game-card">
+                <h3>Coming Soon</h3>
+                <img src="[Insert placeholder image URL]" alt="Coming Soon" class="game-image">
+                <p>Stay tuned for more exciting games and content!</p>
+            </div>
+        </div>
+
+        <div class="donate-section">
+            <h2>Support the Stream</h2>
+            <p>Your support helps improve the quality of streams and enables more content creation!</p>
+            <p>Minimum donation: $1 USD (R17.95)</p>
+            
+            <div class="payment-options">
+                <h3>Choose Your Payment Method</h3>
+                
+                <button class="donate-button" onclick="showBankDetails()">
+                    Bank Transfer Details
+                </button>
+
+                <button class="donate-button" onclick="showQRCode()">
+                    Scan QR Code
+                </button>
+            </div>
+
+            <div id="bankDetails" style="display: none;" class="payment-details">
+                <h3>Bank Transfer Details</h3>
+                <p>Bank: [Bank Name]</p>
+                <p>Account Holder: Regan SelloLord</p>
+                <p>Account Number: [Account Number]</p>
+                <p>Branch Code: [Branch Code]</p>
+                <p>Reference: [Your Name + Donation]</p>
+            </div>
+
+            <div id="qrCode" style="display: none;" class="payment-details">
+                <h3>Scan QR Code to Donate</h3>
+                <img src="[Your QR Code Image URL]" alt="Payment QR Code">
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <script>
+        function showBankDetails() {
+            const bankDetails = document.getElementById("bankDetails");
+            const qrCode = document.getElementById("qrCode");
+            qrCode.style.display = "none";
+            bankDetails.style.display = bankDetails.style.display === "none" ? "block" : "none";
+        }
+
+        function showQRCode() {
+            const bankDetails = document.getElementById("bankDetails");
+            const qrCode = document.getElementById("qrCode");
+            bankDetails.style.display = "none";
+            qrCode.style.display = qrCode.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
